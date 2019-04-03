@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Especificamos donde se la dirección de nuestra hoja de estilos -->
+    <link href="css/default.css" rel="stylesheet" type="text/css">
+
+    <!-- Define el titulo de nuestra página en la barra del buscador. Con este
+        título es también el que se mostratará en el motor de búsqueda-->
+    <title>TEP Ejemplo 1</title>
+
+    <!-- Elementos <meta>. Proporcionan datos acerca de la página, que no serán mostrados
+        para el usuario, pero sí son analizables para las máquinas. En este caso, tenemos el 
+        metadato charset="UTF-8", el cual indica la codificación de los carácteres de la página
+        (8-bit Unicode Transformation Format).
+        El segundo, name = "viewport" viewport es el área visible que tendrá el usuario en una
+        página web. Varia según el dispositivo. width = device-width estable que el ancho de la 
+        página será igual al ancho del dispositivo. La escala inicial será de 1.0 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <!-- Encabezados de las secciones. <h1> será el más importante, <h6> será el encabezado menos 
+        importante. Por regla, sólo se puede tener un h1 por sección (no podemos tener muchas cosas más
+        importantes. Lo más importante es único. Si las tenemos, tal vez no sean tan importantes y habría
+        que considerar que etiqueta h debería de llevar). -->
+    <h1>Holi</h1>
+    <!--         
+        La etiqueta <div>define una división o una sección en un documento HTML. Frecuentemente es utili-
+        zado como un contenedor para otros elementos de HTML o para CSS. En este caso, esta indicando que
+        los elementos que se encuentren dentro de él, tendrán las propiedades de la clase "container". 
+    
+        Una clase es general, es decir, contiene elementos que puede tener más de una sección del HTML. 
+        Esta clase refiere a elementos de estilo que tenemos en nuestra página CSS, a la que se hizo
+        referencia más arriba -->
+    <div class="container">
+        <!-- La etiqueta p refiere a un párrafo en HTML. Este párrafo se ve afectado por la clase
+            "container", pues está dentro del contenedor que tiene está clase. Un elemento HTML puede 
+            referir a más de una clase -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis odio elit. Mauris varius gravida dui quis
+            posuere. Fusce varius arcu non nunc lobortis, suscipit finibus sapien pulvinar. Aliquam nulla odio, commodo
+            id iaculis sit amet, luctus et massa. Nulla posuere nisi sit amet magna hendrerit, et molestie neque
+            laoreet. Etiam placerat tempor porttitor. Nunc turpis nisi, scelerisque eget tortor non, gravida commodo
+            neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas
+            ullamcorper, purus eget hendrerit dapibus, est justo consectetur sem, at lobortis dui massa mattis ex.
+            Aliquam tincidunt feugiat ante, ut tincidunt dui feugiat ac. </p>
+    </div>
+</body>
+
+</html>

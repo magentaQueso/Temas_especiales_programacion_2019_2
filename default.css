@@ -1,0 +1,49 @@
+/* Siempre se va a definir una hoja de estilos. En ella se hará referencia a las
+clases que hayamos puesto en nuestro HTML.
+
+Una clase es general, es decir, contiene elementos que puede tener más de una sección del HTML. 
+        Para referir a una clase, se hace de la siguiente manera:
+        .nombre_de_la_clase{
+            propiedad:valor;
+        }
+
+Un id se utiliza para referir a elementos particulares, siendo único dentro de la página,
+seleccionando UN ÚNICO elemento. 
+Para referir a un id, se hace de la siguiente manera:
+        #nombre_del_id{
+            propiedad:valor;
+        }
+
+Para darle propiedades directamente a la etiqueta de HTML, se inserta de la siguiente 
+manera
+        etiqueta_HTML{
+            propiedad:valor;
+        }
+
+        */
+
+/* En este caso, se esta aplicando una serie de propiedades a TODAS las etiquetas h1 que
+se encuentren en el documento HTML.
+Todos los elementos tienen un pequeño contenedor.*/
+
+h1{
+    background-color:blue; /*Color de fondo que tendrá el espacio que contenga a h1 */
+    margin-top: 100px; /*Espacio que tendrá el elemento hacia arriba, respecto a otros elementos de la página*/
+    margin-left: 100px;
+    padding: 100px;/*Espacio que tendrá el elemento, respecto a su propio contenedor*/
+    padding-left: 300px;
+    border: #66ff00 5px dashed; /*Borde del contenedor. Se específica el color, el grosor y el estilo*/
+    border-bottom: rgb(153, 17, 119) 10px solid;  /*Se le asigna un borde con otro estilo a la misma etiqueta.  */
+    border-radius: 300px 10px 40px 60px;  /*Modifica las esquinas del contenedor. Comienza en izquierda superior, sentido a las manecillas del reloj*/
+}
+
+/* Se le aplican propiedades a la clase container que se definio en el HTML. Estas propiedades se le aplicarán a todos
+los elementos que se encuentren dentro de la etiqueta <div> con la clase container. */
+
+.container{
+    background-color: pink;
+    width: 90%; /*Se define un ancho al contenedor */
+    min-width: 500px; /*Ancho mínimo. El contenedor se quedará de ese ancho, independientemente de si todo el contenido lo ocupa */
+    max-width: 1200px; /*Ancho máximo. El texto se adaptara al ancho.  */
+    margin: 30px auto; /*Margen respecto a otros elementos de la página. 30px para top y bottom, auto para izquierda y derecha.*/
+}
