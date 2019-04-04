@@ -1,0 +1,92 @@
+/* Cuando comenzamos a asignar características del diseño responsivo, 
+primero se diseña para la resolución más pequeña y hasta el último
+la resolución más grande. Habrá características generales que
+deseemos se hereden en todos los tamaños (como tipo o color de letra)
+o elementos que deseemos que aparezcan de un modo en un tamaño y de otro 
+modo en otro. */
+
+/*Comienza diseño para dispositivos móviles */
+.container{
+    background-color: aqua;
+}
+
+h1{
+    /* Relative to the font-size of the element (2em means 2 times the size of the current font) */
+    font-size: 2em;
+    color:blueviolet;
+}
+
+.md-50{
+    background-color: aqua; 
+    padding: 2%;
+}
+
+.md-51{
+    background-color: magenta;
+    padding:2%;
+}
+
+/*Termina diseño para dispositivos móviles */
+
+
+/* @media se utiliza para aplicar diferentes estilos para diferentes
+dispositivos. Se puede establecer una hoja de estilos adaptada a 
+computadoras de escritorio, portátiles, tablets y teléfonos móviles. 
+Existen muchas características de los medios y los valores que podemos
+dar para que respondan a estos. En este ejemplo, utilizaremos min-width,
+el cual tendrá un cambio cuando el ancho mínimo sea de 668px.
+
+A partir de esa dimensión, a cada elemento se le darán las características
+que se vayan estableciendo, no importando si ya se habían establecido otras
+diferentes anteriormente, estás serán válidas para ese ancho mínimo, siempre
+y cuando se encuentren dentro del @media. Pueden agregarse más clases o id que
+no estaban anteriormente. */
+
+@media(min-width: 668px){
+    h1{
+        font-size: 2em;
+        color:yellow;
+    }
+    
+    .md-50{
+        background-color: green;
+        width: 100px;
+        height: 100px;
+    }
+   
+    .md-51{
+        background-color: magenta;
+    }
+}
+
+@media(min-width: 960px){
+    h1{
+        font-size: 3em;
+        color:red;
+    }
+    .md-50{
+        width: 38%;
+        /* Display especifica el comportamiento de visualización que tendrá un elemento.
+                * inline: los elementos se alinean uno a continuación de otro, sin respetar los
+                anchos, altos ni margenes verticales de los elementos. Fluyen como si fueran
+                texto
+                * block: Se renderizan en líneas independientes. Respetan anchos y margenes verticales
+            Cuando aplicamos inline-block, tenemos que el elemento HTML fluirán con el texto, pero además
+            respetarán los anchos, altos y margenes verticales. 
+
+        */
+        display: inline-block;
+        padding: 10%;
+    }
+    .md-51{
+        width: 38%;
+        display: inline-block;
+        padding: 5%;
+    }    
+}
+
+@media(min-width: 1024px){
+        h1{
+        font-size: 3.5em;
+    }
+}
