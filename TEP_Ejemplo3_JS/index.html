@@ -1,0 +1,59 @@
+<!-- Para el desarrollo web, JavaScript es uno de los tres lenguajes que debemos aprender. 
+            1. HTML para definir el contenido de la página web
+            2. CSS para especificar el diseño de nuestra página web
+            3. JavaScript para especificar el comportamiento de la página.
+        En este ejercicio, se tendrá una introducción a JavaScript.
+    Importa mucho el orden en el que escribimos nuestro script. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introducción a JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript"> //Indicamos que inicia el script  
+
+        // document.write se trata de una instrucción de salida. Escribirá directamente en el HTML. Se recomienda
+        // su uso sólo para testear.  
+        document.write('qwerty');
+
+        //La declaración de una variable comienza con la palabra reservada var. Las variables pueden tener valores como 
+        //cadenas de carácteres, números enteros, números decimales, booleanos o pueden quedar indefinidas. Es muy
+        //importante aclarar sobre las variables en JavaScript no se necesita declarar el tipo de variable que es; eso
+        //lo aclararemos nosotros con el valor que asignemos en la variables.
+        //Las variables son sensibles a mayúsculas.
+        var nombre = 'Aquí va el nombre';
+
+        //Se trata de otra instrucción de salida. Esta instrucción sirve para mostrar mensajes que no queremos que inter-
+        //fiera con el HTML, por lo que sólo se verá en la consola. En este caso, se está imprimiendo lo que contiene
+        //la variable nombre.
+        console.log(nombre);
+
+        //En esta línea de código se verán dos cosas: El parseo y el método prompt.
+        //parseInt se trata de una función que nos permitirá parsear un string y devolvernos un integer. Es decir, transformar
+        //un string a un número. 
+        //El método prompt se trata de una ventana en la que el usuario podrá introducir un valor. Retornará la entrada que el 
+        //usuario haya introducido. Si el usuario dio clic en "Cancel", entonces retornará un "null". El valor que retornará 
+        //será un String. 
+        //En este ejemplo, solicitamos al usuario por medio de un método prompt que escriba un número. Como el valor que retorna
+        //por default el método prompt se trata de un string, lo parseamos para que en la variable se guarde un valor de tipo int.
+        var numero = parseInt(prompt('Escribe un numero'));
+
+        //typeof se trata de un operador de tipo. Comprueba de que tipo son las variables que se han declarado. En este caso, debe 
+        //devolver un number, pues ya se ha parseado la variable para que espere un número. 
+        alert("La variable numero es de tipo: " + typeof numero);
+
+        //alert es una instrucción que también forma parte del objeto window. Puede recibir texto, funciones, variable e incluso,
+        //realizar evaluaciones numéricas. En este caso, si la variable número recibe un número, se imprimirá el número que el 
+        //usuario haya insertado. Si no recibe un número y recibe cualquier otro carácter, enviará NaN (Not a Number).
+        alert(numero);
+        alert(5 + 5);
+    </script>
+    <!--Se cierra el Script -->
+</head>
+
+<body>
+</body>
+
+</html>
