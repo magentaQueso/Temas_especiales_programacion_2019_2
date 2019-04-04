@@ -1,4 +1,4 @@
-# TEP
+# 
 Temas Especiales de Programación
 
 Estos son los ejercicios que se han realizado durante el semestre en la clase de Temas Especiales de Programación,
