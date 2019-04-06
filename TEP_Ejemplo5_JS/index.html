@@ -1,0 +1,73 @@
+<!-- En este ejemplo, vamos a ver lo que son los arreglos en JavaScript.
+Los arreglos en JavaScript son utilizados para almacenar múltiples
+valores en una variable simple. Se podría decir que se trata de una
+variable especial que puede almacenar más de un valor al mismo tiempo. 
+
+Se puede acceder a los valores que almacena un array, simplemente
+haciendo referencia a su index.  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A r r e g l o s</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+
+            // Este es un tipo de declaración de arreglo, utilizando
+            // la palabra clave new, seguida de Array. Los elementos que
+            // componen al arreglo van adentro de (). 
+            var arreglo = new Array(1, 2, 3);
+            console.log(arreglo); //Se imprime en consola el arreglo el arreglo. 
+
+            //Trabajar con pilas. Para agregar un elemento a nuestro arreglo
+            //utilizamos el método push. 
+            //      nombre_arreglo.push(elemento_que_desea_agregarse);
+            arreglo.push(4);
+            console.log(arreglo);
+
+            //El metodo pop elimina el último elemento del arreglo.
+            var arreglo_2 = new Array("Tania", "Ada", "Daniela", "Avril");
+            console.log(arreglo_2);
+            arreglo_2.pop();
+            console.log(arreglo_2);
+
+            // Los arreglos pueden contener números, booleanos o Strings en un
+            // mismo arreglo. Si deseamos añadir un elemento en determinado lugar
+            // de nuestro array, tenemos que seguir la siguiente estructura:
+            //         nombre_arreglo[lugar_en_el_que_se_desea_insertar] = Elemento_a_insertar;
+            arreglo[6] = 'cadena';
+            console.log(arreglo);
+
+            
+            var arreglo_3 = new Array("vaca","camello","perro");
+
+            //La propiedad lenght retorna el número de caracteres. En este caso, estamos validando
+            //que nuestro el arreglo se trate de un arreglo y no se encuentre indefinido. Indefinido
+            //no es lo mismo que nulo. Indefinido es que no existe, mientras que null es que existe,
+            //pero se encuentra vacío.  
+            for(var i = 0; i<arreglo_3.length; i++){
+                //si el arreglo_3 es diferente de undefinedm entonces que imprima en consola todo el 
+                //arreglo recorrido.
+                if(typeof arreglo_3[i] !== 'undefined'){
+                console.log(arreglo_3[i]);
+            }//arreglos son objetos, instancias, de la clase array
+            }
+
+            //Se tratan de arreglos que contienen dentro de sí mismos otros arreglos
+            var bidimensional = new Array(new Array("mesa","silla"), new Array("estufa","refrigerador"));  
+                    console.log(bidimensional);
+            
+            //También se puede declarar un arreglo con corchetes en vez de la palabara reservada new Array.
+            //es mas rapido declarar un arreglo con corchetes.
+            var ejemplo = []; //Se declara un arreglo vacío.
+            ejemplo[2] = 34; //Se indica que deseamos que en el lugar 2 del arreglo, se inserte el valor 34
+
+            console.log(ejemplo);
+        </script>
+    </head>
+    
+    <body>
+
+    </body>
+</html>
