@@ -1,0 +1,37 @@
+<!-- Los eventos son cosas que pasan en los elementos de un HTML. Puede ser algo que el
+navegador o el usuario hace (como que una página termine de cargar o que un botón 
+en HTML sea apretado).  
+
+La estructura es:
+
+<elemento  evento = "Codigo JavaScript"> 
+    
+La acción que lleva a cabo el evento puede ser aplicado a otro elemento del HTML o bien,
+así mismo. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/index.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        
+<p>Oprime los botones e inserta los datos solicitados:</p><br/>
+
+<!-- En este ejercicio, tenemos un evento onclick, el cual llamará a una función, pues el 
+evento onclick funciona cuando el usuario hace clic en algún elemento del . El evento está
+aplicando a un botón y a este botón se le está aplicando CSS, para darle color y un tamaño. 
+
+Las funciones se encuentran declaradas en el archivo index.js-->
+        <button onclick="getNombre()" style="background:green; color:white; height:30px;">nombre</button><br/>
+        <button onclick="getApellido()" style="background:rgb(3, 37, 37); color:white; height:30px;"> apellido</button><br/>
+        <button onclick="getEdad()" style="background:brown; color:white; height:30px;"> edad</button><br/>
+        <button onclick="getPasatiempo()" style="background:blueviolet; color:white; height:30px;"> pasatiempo</button><br/>
+        <button onclick="imprimir()" style="background:rgb(97, 5, 5); color:white; height:30px;"> imprimir</button><br/>
+       
+    </body>
+</html>
